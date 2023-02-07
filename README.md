@@ -1,4 +1,24 @@
-# mongo-tutorial
+# mongodb-tutorial
+
+# Table of Contents  
+
+- [Intro](#intro)  
+- [Mongodb drivers](#mongodb-drivers)  
+- [Basics](#basics)  
+- [Relationships](#relationships)  
+- [CRUD](#crud)  
+  * [Find](#find)
+  * [Insert](#insert)
+  * [Update](#update)
+  * [Remove](#remove)
+
+
+
+
+
+
+
+## Intro
 
 ## Mongodb drivers
 
@@ -7,7 +27,7 @@
 
 ****
 
-## ODM
+### ODM
 
 - [mongoengine](https://docs.mongoengine.org/) 
 
@@ -145,7 +165,7 @@ referenced relationships designing normalized relationship. In this approach, bo
 ****
 ## CRUD
 
-- Insert
+- ### Insert
 
 	````javascript
 		db.collection.insertMany(<documents>);
@@ -155,7 +175,7 @@ referenced relationships designing normalized relationship. In this approach, bo
 
 	````
 
-- Find
+-  ### Find
 
 	The `pretty()` method displays the results in a formatted way.
 
@@ -207,7 +227,7 @@ referenced relationships designing normalized relationship. In this approach, bo
 
 
 
-- Update
+- ### Update
 
 	````javascript
 		db.collection.update(SELECTION_CRITERIA, UPDATED_DATA)
@@ -251,7 +271,7 @@ referenced relationships designing normalized relationship. In this approach, bo
 		db.collection.updateMany({Age:{ $gt: "25" }},{ $set: { Age: '00'}})
 	````
 
-- Remove
+- ### Remove
 
 	````javascript
 		db.collection.remove(DELLETION_CRITTERIA) # remove all filterd items
